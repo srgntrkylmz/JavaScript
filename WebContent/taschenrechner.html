@@ -2,27 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>Taschenrechner</title>
 
-<script> type="text/javascript" src="rechnen.js"</script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="rechnen.js">
+
+</script>
+
 </head>
 
 <body>
 
-<form name = "frm" >
+<div id ="calc-container">
+<form name ="calculator">
+<input type = "text" name ="answer" />
+<br/>
 
-<input name = "result" >
-</br>
-<input type= "button" name= "1" value ="1" onClick = "run1()" >
-<input type= "button" name ="2" value ="2" onClick = "run2()" >
-<input type ="button" name ="3" value ="3" onClick = "run3()" >
-<br>
-<input type ="button" name ="plus" value ="+" onClick = "runplus()" >
+<input type ="button" value= " 1 " onclick="add1()"/>
+<input type ="button" value= " 2 " onclick="add2()"/>
+<input type ="button" value= " 3 " onclick="add3()"/>
+<input type ="button" value= " + " onclick="runplus()"/>
+<br/>
 
+<input type ="button" value= " 4 " onclick="add4()"/>
+<input type ="button" value= " 5 " onclick="add5()"/>
+<input type ="button" value= " 6 " onclick="add6()"/>
+<input type ="button" value= " - " onclick="runminus()"/>
+<br/>
 
-<input type = "button" name ="calc" value ="=" onClick = "evalu()" >
+<input type ="button" value= " 7 " onclick="add7()"/>
+<input type ="button" value= " 8 " onclick="add8()"/>
+<input type ="button" value= " 9 " onclick="add9()"/>
+<input type ="button" value= " x " onclick="runmulti()"/>
+<br/>
+
+<input type ="button" value= " c " onclick="runclear()"/>
+<input type ="button" value= " 0 " onclick="add0()"/>
+<input type ="button" value= " = " onclick="runsolution()"/>
+<input type ="button" value= " / " onclick="rundivide()"/>
+<br/>
+
 
 </form>
+</div>
 
 
 
